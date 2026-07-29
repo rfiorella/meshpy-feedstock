@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script:
     # Need to parse MESON_ARGS to make sure meson finds the correct executables for cross-compilation.
     - $PYTHON -m build -w -n -x -Csetup-args=${MESON_ARGS// / -Csetup-args=}    # [unix]
