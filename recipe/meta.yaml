@@ -11,6 +11,8 @@ source:
   fn: {{ uname }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ uname[0] }}/{{ uname }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-fix-aarch64-fp-contraction.patch
 
 build:
   number: 1
