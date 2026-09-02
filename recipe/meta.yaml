@@ -1,7 +1,7 @@
 {% set name = "meshpy" %}
 {% set uname = "MeshPy" %}
-{% set version = "2026.1" %}
-{% set sha256 = "dd444e37edf5f751299ad7af5fc89aba6aad2cb67b4c3413ee0a5003935732dd" %}
+{% set version = "2026.1.1" %}
+{% set sha256 = "21376b339a9d9c017c9bb1e9126f6595b344c8c7790e00ce6d46e929edd9d2ff" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ uname }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ uname[0] }}/{{ uname }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ uname[0] }}/{{ uname }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
